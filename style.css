@@ -83,6 +83,8 @@ header .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../images/header-bg.png") no-repeat center center/cover;
   max-width: 400px;
   margin: 10px auto;
+  -webkit-box-shadow: 7px 18px 50px #555;
+          box-shadow: 7px 18px 50px #555;
 }
 
 .card .card-list-item {
@@ -100,5 +102,13 @@ header .banner {
 .card .btn-warning:hover {
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
+}
+
+.customers {
+  background-color: #151f20;
+}
+
+.customers .myCarousel {
+  height: 60vh;
 }
 /*# sourceMappingURL=style.css.map */
