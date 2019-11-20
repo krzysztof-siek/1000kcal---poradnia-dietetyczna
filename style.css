@@ -111,4 +111,40 @@ header .banner {
 .customers .myCarousel {
   height: 60vh;
 }
+
+.contact {
+  background: linear-gradient(105deg, #151f20 0%, rgba(21, 31, 32, 0.95) 50%, transparent 50%), url("../images/contact-bg.jpg") no-repeat center center/cover;
+}
+
+.contact h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact .form-group input {
+  width: 60%;
+}
+
+.contact .form-group textarea {
+  width: 60%;
+}
+
+.contact .submit {
+  display: block;
+  width: 60%;
+}
+
+@media (max-width: 992px) {
+  .contact {
+    background: -webkit-gradient(linear, left top, left bottom, from(#151f20), to(rgba(21, 31, 32, 0.95)));
+    background: linear-gradient(#151f20, rgba(21, 31, 32, 0.95));
+  }
+  .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */
