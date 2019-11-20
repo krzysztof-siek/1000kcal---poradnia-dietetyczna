@@ -77,4 +77,28 @@ header .banner {
 .mission {
   background-color: #151f20;
 }
+
+.card {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("../images/header-bg.png") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../images/header-bg.png") no-repeat center center/cover;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.card .card-list-item {
+  border-bottom: 2px groove white;
+  width: 55%;
+}
+
+.card .btn-warning {
+  padding: 8px 16px;
+  font-size: 1.4rem;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.card .btn-warning:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
 /*# sourceMappingURL=style.css.map */
