@@ -61,4 +61,20 @@ header .banner {
     padding: 20px;
   }
 }
+
+.underline {
+  width: 200px;
+  border: 2px solid #333B40;
+  margin: auto;
+}
+
+.underline-light {
+  width: 200px;
+  border: 2px solid white;
+  margin: auto;
+}
+
+.mission {
+  background-color: #151f20;
+}
 /*# sourceMappingURL=style.css.map */
