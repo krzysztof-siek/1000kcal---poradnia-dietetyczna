@@ -2,17 +2,25 @@ header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("./images/header.jpg") no-repeat center center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("./images/header.jpg") no-repeat center center/cover;
   height: 100vh;
+  width: 100vw;
 }
 
 header img {
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
 }
 
 header .line {
   height: 3px;
   width: 23px;
   margin: 5px;
+}
+
+header .nav-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
 }
 
 header .change.line1 {
@@ -37,10 +45,11 @@ header .menu-item {
 }
 
 header .nav-menu {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
   -webkit-transition: all .5s;
   transition: all .5s;
+  letter-spacing: 0.2px;
 }
 
 header .nav-menu.sticky {
@@ -155,11 +164,20 @@ header .banner {
 }
 
 .contact .form-group input {
-  width: 60%;
+  width: 80%;
 }
 
 .contact .form-group textarea {
-  width: 60%;
+  width: 80%;
+}
+
+@media (min-width: 992px) {
+  .contact .form-group input {
+    width: 60%;
+  }
+  .contact .form-group textarea {
+    width: 60%;
+  }
 }
 
 .contact .submit {
@@ -188,5 +206,10 @@ html {
 
 .active {
   color: yellow !important;
+}
+
+.wrapper {
+  width: 100vw;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

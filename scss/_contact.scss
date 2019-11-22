@@ -7,11 +7,20 @@
     .form-group {
        
         input {
-            width: 60%;          
+            width: 80%;          
         }
         textarea {
-            width: 60%;
+            width: 80%;
            
+        }
+        @media(min-width: 992px) {
+            input {
+                width: 60%;          
+            }
+            textarea {
+                width: 60%;
+               
+            } 
         }
     }
     .submit {
