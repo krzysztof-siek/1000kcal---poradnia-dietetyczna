@@ -7,14 +7,16 @@ window.addEventListener('scroll', () => {
     } else {
         nav.classList.remove("sticky")
     }
+
+
 })
 
 const navButton = document.querySelector(".nav-button");
 
 
 changeNavButton = () => {
-    // tutaj zamiast łapać każdą linię po kolei, później można złapać wszystkie na raz i zrobić for Each , albo coś... 
-    // Dodawanie klasy change przy kliknięciu co powoduje zmianę pozycji linii w burgerze
+    // tutaj zamiast łapać każdą linię po kolei, później można złapać wszystkie na raz i zrobić pętle - muszę to zmienić później
+    // Dodawanie klasy "change" przy kliknięciu co powoduje zmianę pozycji linii w burgerze
     const line1 = document.querySelector('.line1');
     const line2 = document.querySelector('.line2');
     const line3 = document.querySelector('.line3');
@@ -26,5 +28,21 @@ changeNavButton = () => {
 navButton.addEventListener('click', changeNavButton)
 
 
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const card1 = document.querySelector('.card-1');
+    const card2 = document.querySelector('.card-2');
+    const card3 = document.querySelector('.card-3');
+    if (scrollY >= 1500) {
+        card1.classList.add('moveFromLeft');
+        card2.classList.add('opacity');
+        card3.classList.add('moveFromRight');
 
+    } else {
+        card1.classList.remove('moveFromLeft');
+        card2.classList.remove('opacity');
+        card3.classList.remove('moveFromRight');
+    }
+
+})
 

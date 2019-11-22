@@ -104,11 +104,45 @@ header .banner {
           transform: translateY(-2px);
 }
 
-.customers {
+.card-1 {
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.moveFromLeft {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.card-2 {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.opacity {
+  opacity: 1;
+}
+
+.card-3 {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.moveFromRight {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.opinion {
   background-color: #151f20;
 }
 
-.customers .myCarousel {
+.opinion .myCarousel {
   height: 60vh;
 }
 
@@ -146,5 +180,13 @@ header .banner {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.active {
+  color: yellow !important;
 }
 /*# sourceMappingURL=style.css.map */

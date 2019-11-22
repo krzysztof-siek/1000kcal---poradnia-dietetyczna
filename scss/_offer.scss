@@ -8,6 +8,9 @@
         border-bottom: 2px groove white;
         width: 55%;
     }
+
+   
+
     .btn-warning {
         padding: 8px 16px;
         font-size: 1.4rem;
@@ -18,3 +21,29 @@
         }
     }
 }
+
+.card-1 {
+    transform: translateX(-200%);
+    transition: 1s;
+}
+        .moveFromLeft{
+            transform: translateX(0%);
+    
+        }
+.card-2 {
+    opacity: 0;
+    transition: 1s;
+}
+        .opacity{
+            opacity:1
+    
+        }
+.card-3 {
+    transform: translateX(200%);
+    transition: 1s;
+}
+        .moveFromRight{
+            transform: translateX(0%);
+    
+        }
+
